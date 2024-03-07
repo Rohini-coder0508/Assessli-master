@@ -24,7 +24,7 @@ function App() {
     Phone: '',
     Message: '',
   });
-
+// Handling Change of Inputs
   const handleChange = ({ target }) => {
     const { name, value } = target;
     setInputs({
@@ -32,7 +32,7 @@ function App() {
       [name]: value,
     });
   };
-
+// Handling Submit Button
   const handleSubmit = async () => {
     try {
       if (Object.values(inputs).some((value) => value.trim() === '')) {
